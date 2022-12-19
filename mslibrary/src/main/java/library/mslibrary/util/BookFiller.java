@@ -18,16 +18,19 @@ public class BookFiller {
     @PostConstruct
     public void init()
     {
-        Book book1 = new Book("Marqués De Murrieta Rioja", "Tinto", "1995", "España");
+        Book book1 = new Book("El principito", "Azul", "1995", "Francia");
         bookService.addBook(book1);
         try {Thread.sleep(1000);} catch (InterruptedException e){}
-        Book book2 = new Book("Mar De Frades", "Blanco", "1999", "España");
+        Book book2 = new Book("Matilda", "Blanco", "1988", "Reino Unido");
         bookService.addBook(book2);
         try {Thread.sleep(1000);} catch (InterruptedException e){}
-        Book book3 = new Book("Muga", "Rosado", "2001", "España");
+        Book book3 = new Book("Caballero Carmelo", "Rosado", "2001", "Perú");
         bookService.addBook(book3);
         try {Thread.sleep(1000);} catch (InterruptedException e){}
-        Book book4 = new Book("Gato Negro", "Rosado", "2005", "Chile");
+        Book book4 = new Book("Naranja Lima", "Rosado", "1968", "Brazil");
         bookService.addBook(book4);
+        try {Thread.sleep(1000);} catch (InterruptedException e){}
+        Book book5 = new Book("Los Heraldos Negros", "Negro", "1918", "Perú");
+        bookService.addBook(book5);
     }
 }
